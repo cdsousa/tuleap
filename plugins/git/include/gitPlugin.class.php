@@ -158,7 +158,7 @@ class GitPlugin extends Plugin
         $this->addHook(Event::GET_SYSTEM_EVENT_CLASS,                     'getSystemEventClass',                          false);
         $this->addHook(Event::GET_PLUGINS_AVAILABLE_KEYWORDS_REFERENCES,  'getReferenceKeywords',                         false);
         $this->addHook(Event::GET_AVAILABLE_REFERENCE_NATURE,             'getReferenceNatures',                          false);
-        $this->addHook(Event::GET_REFERENCE);
+        // $this->addHook(Event::GET_REFERENCE);
         $this->addHook('SystemEvent_PROJECT_IS_PRIVATE',                  'changeProjectRepositoriesAccess',              false);
         $this->addHook('SystemEvent_PROJECT_RENAME',                      'systemEventProjectRename',                     false);
         $this->addHook('project_is_deleted',                              'project_is_deleted',                           false);
